@@ -6,7 +6,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # Download and install wkhtmltopdf
-RUN apt-get install -y build-essential xorg libssl-dev libxrender-dev wget gdebi
+RUN apt-get install -y build-essential xorg libssl-dev libxrender-dev wget gdebi fonts-wqy-microhei ttf-wqy-microhei fonts-wqy-zenhei ttf-wqy-zenhei
+
 RUN wget http://downloads.sourceforge.net/project/wkhtmltopdf/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 RUN gdebi --n wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 ENTRYPOINT ["wkhtmltopdf"]
