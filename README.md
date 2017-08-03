@@ -5,7 +5,7 @@ This docker container lets you run wkhtmltopdf in a docker container.
 ## Building the image
 
 ```sh
-docker build .
+docker build -t openlabs/docker-wkhtmltopdf .
 ```
 
 ## Using the image
@@ -30,7 +30,7 @@ See:
 
 ## Bugs and questions
 
-The development of the container takes place on 
+The development of the container takes place on
 [Github](https://github.com/openlabs/docker-wkhtmltopdf-aas). If you
 have a question or a bug report to file, you can report as a github issue.
 
